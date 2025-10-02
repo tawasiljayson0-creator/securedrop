@@ -1,7 +1,9 @@
 import binascii
 import os
 from datetime import datetime, timezone
+from os import path
 from typing import List, Literal, Optional, Union
+from uuid import UUID
 
 import argon2
 import flask
@@ -582,3 +584,36 @@ def serve_file_with_etag(db_obj: Union[Reply, Submission]) -> flask.Response:
     response.headers["Etag"] = db_obj.checksum
     response.headers["Accept-Ranges"] = "bytes"
     return response
+
+
+def save_reply(source: Source, data: dict) -> Reply:
+    source.interaction_count += 1
+    filename = Storage.get_default().save_pre_encrypted_reply(
+        source.filesystem_id,
+        source.interaction_count,
+        source.journalist_filename,
+        data["reply"],
+    )
+
+    # issue #3918
+    filename = path.basename(filename)
+
+    reply = Reply(session.get_user(), source, filename, Storage.get_default())
+
+    reply_uuid = data.get("uuid")
+    if reply_uuid is not None:
+        # check that is is parseable
+        UUID(reply_uuid)
+        reply.uuid = reply_uuid
+
+    try:
+        db.session.add(reply)
+        seen_reply = SeenReply(reply=reply, journalist=session.get_user())
+        db.session.add(seen_reply)
+        db.session.add(source)
+        db.session.commit()
+    except IntegrityError as e:
+        db.session.rollback()
+        raise e
+
+    return reply
