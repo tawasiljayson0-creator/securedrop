@@ -1,4 +1,5 @@
 from db import db
+from journalist_app.api import get_or_404
 from journalist_app.api2.types import (
     Event,
     EventResult,
@@ -7,6 +8,8 @@ from journalist_app.api2.types import (
     ItemTarget,
     SourceTarget,
 )
+from journalist_app.utils import save_reply
+from models import Source
 
 
 class EventHandler:
@@ -37,3 +40,16 @@ class EventHandler:
             )
 
         return handler(event)
+
+    @staticmethod
+    def handle_reply_sent(event: Event) -> EventResult:
+        source = get_or_404(Source, event.target.source_uuid, column=Source.uuid)
+        reply = save_reply(source, event.data)
+        db.session.refresh(source)
+
+        return EventResult(
+            event_id=event.id,
+            status=EventStatusCode.OK,
+            sources={source.uuid: source},
+            items={reply.uuid: reply},
+        )

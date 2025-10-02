@@ -26,6 +26,7 @@ class EventType(StrEnum):
 
 
 class EventStatusCode(IntEnum):
+    OK = 200
     BadRequest = 400
     NotImplemented = 501
 
