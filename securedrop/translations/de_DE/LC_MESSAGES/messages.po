@@ -1,5 +1,5 @@
 msgid ""
-msgstr "Project-Id-Version: SecureDrop \\'0.3.5\\'\nReport-Msgid-Bugs-To: securedrop@freedom.press\nPOT-Creation-Date: 2017-09-02 07:28+0000\nPO-Revision-Date: 2025-07-02 17:48+0000\nLast-Translator: Erik Moeller <eloquence@gmail.com>\nLanguage-Team: German <https://weblate.securedrop.org/projects/securedrop/securedrop/de/>\nLanguage: de_DE\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.11.1\nGenerated-By: Babel 2.4.0\n"
+msgstr "Project-Id-Version: SecureDrop \\'0.3.5\\'\nReport-Msgid-Bugs-To: securedrop@freedom.press\nPOT-Creation-Date: 2017-09-02 07:28+0000\nPO-Revision-Date: 2025-07-23 21:02+0000\nLast-Translator: Erik Moeller <eloquence@gmail.com>\nLanguage-Team: German <https://weblate.securedrop.org/projects/securedrop/securedrop/de/>\nLanguage: de_DE\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Weblate 5.12.2\nGenerated-By: Babel 2.4.0\n"
 
 msgid "Name too long"
 msgstr "Name zu lang"
@@ -429,7 +429,7 @@ msgid "Return to All Sources"
 msgstr "Zurück zu Alle Quellen"
 
 msgid "Powered by <b>SecureDrop {version}</b>."
-msgstr "Ermöglicht von <b>SecureDrop {version}</b>."
+msgstr "Betrieben mit <b>SecureDrop {version}</b>."
 
 msgid "You are here:"
 msgstr "Sie sind hier:"
@@ -1069,7 +1069,7 @@ msgid "Copy and paste the following address into your browser and follow the ins
 msgstr "Kopieren Sie die folgende Adresse in Ihren Browser und folgen Sie der Anleitung, um den Tor-Browser herunterzuladen und zu installieren:"
 
 msgid "If there is a chance that downloading Tor Browser raises suspicion and your mail provider is less likely to be monitored, you can send a mail to <kbd>gettor@torproject.org</kbd> and a bot will answer with instructions."
-msgstr "Wenn es eine Möglichkeit gibt, dass das Herunterladen von Tor-Browser Verdacht erwecken könnte, und Ihr Mail-Anbieter wahrscheinlich weniger überwacht wird, können Sie eine E-Mail an <kbd>gettor@torproject.org</kbd> senden und ein Bot wird mit Anweisungen antworten."
+msgstr "Wenn das Herunterladen von Tor-Browser Verdacht erwecken könnte, und Ihr Mail-Anbieter wahrscheinlich weniger überwacht wird, können Sie eine E-Mail an <kbd>gettor@torproject.org</kbd> senden und ein Bot wird mit Anweisungen antworten."
 
 msgid "Remember, your codename is:"
 msgstr "Denken Sie daran, Ihr Deckname ist:"
