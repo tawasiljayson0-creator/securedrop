@@ -4,19 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
 msgid ""
-msgstr ""
-"Project-Id-Version: SecureDrop 1.3.0~rc1\n"
-"Report-Msgid-Bugs-To: securedrop@freedom.press\n"
-"PO-Revision-Date: 2024-12-12 09:33+0000\n"
-"Last-Translator: Milo Ivir <mail@milotype.de>\n"
-"Language-Team: Croatian <https://weblate.securedrop.org/projects/securedrop/securedrop/hr/>\n"
-"Language: hr\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.8.4\n"
-"Generated-By: Babel 2.5.1\n"
+msgstr "Project-Id-Version: SecureDrop 1.3.0~rc1\nReport-Msgid-Bugs-To: securedrop@freedom.press\nPO-Revision-Date: 2025-09-01 15:37+0000\nLast-Translator: Milo Ivir <mail@milotype.de>\nLanguage-Team: Croatian <https://weblate.securedrop.org/projects/securedrop/securedrop/hr/>\nLanguage: hr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\nX-Generator: Weblate 5.12.2\nGenerated-By: Babel 2.5.1\n"
 
 msgid "Name too long"
 msgstr "Ime je predugačko"
@@ -926,16 +914,16 @@ msgid "Click the <img src=\"{icon}\" alt=\"&quot;Security Level&quot; button\"> 
 msgstr "Pritisnite <img src=\"{icon}\" alt=\"gumb &quot;Razina sigurnosti&quot;\"> u gornjoj alatnoj traci"
 
 msgid "Click <b>Settings</b> to open Security Level preferences"
-msgstr ""
+msgstr "Kliknite na <b>Postavke</b> da biste otvorili postavke za razinu sigurnosti"
 
 msgid "Click <b>Change…</b> and select <b>Safest</b>"
-msgstr ""
+msgstr "Kliknite na <b>Promijeni…</b> i odaberite <b>Najsigurnije</b>"
 
 msgid "Click <b>Save and restart.</b>"
-msgstr ""
+msgstr "Kliknite na <b>Spremi i pokreni ponovo.</b>"
 
 msgid "Tor Browser will restart, with its security level set to <b>Safest</b>. After the restart, come back to this site."
-msgstr ""
+msgstr "Tor preglednik će se ponovo pokrenuti s postavljanom razine sigurnosti na <b>Najsigurnije</b>. Nakon ponovnog pokretanja, vratite se na ovu stranicu."
 
 msgid "<strong>It is recommended to use Tor Browser to access SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Learn how to install it</a>, or ignore this warning to continue."
 msgstr "<strong>Preporučuje se korištenje Tor preglednika za pristup SecureDrop-u:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Saznajte kako ga instalirati</a> ili zanemarite ovo upozorenje i nastavite."
